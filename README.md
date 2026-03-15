@@ -3,7 +3,7 @@ JetBrains Internship Task
 
 This project implements the Word2Vec Skip-gram model with Negative Sampling from scratch using NumPy. The code has three main scripts:.
 
-- **train.py** Entry point for training, loads the YAML configuration and runs the training loop.
+- **train.py** Entry point for training, loads the yaml configuration and runs the training loop.
 - **model.py** Skip-gram model with negative sampling, including forward pass, gradient computation, and weight updates.
 - **utils.py** Data preparation utilities, tokenization, vocabulary building, subsampling, context–target pair generation, and negative sampling.
 

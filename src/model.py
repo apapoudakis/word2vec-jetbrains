@@ -16,13 +16,8 @@ class Word2Vec:
         # W_in from uniform(-0.5, 0.5) and scale by 1/D to keep initial dot products small
         # W_out all zeros
         
-        data = np.load("/mnt_path/projects/word2vec/experiments/test/word2vec_embeddings_epoch1.npz")
-        self.W_in = data["W_in"]
-        self.W_out = data["W_out"]
-
-        
-        # self.W_in = np.random.uniform(-0.5, 0.5, (self.V, self.D)) / self.D
-        # self.W_out = np.zeros((self.V, self.D))
+        self.W_in = np.random.uniform(-0.5, 0.5, (self.V, self.D)) / self.D
+        self.W_out = np.zeros((self.V, self.D))
 
     def train_pair(self, centre_id, context_id, neg_ids, lr):
         """
