@@ -1,0 +1,18 @@
+# data
+corpus: ../data/text8.txt           
+min_count: 5
+
+# model
+embed_dim: 300
+
+# training
+epochs: 5
+lr: 0.025
+window: 5
+neg_samples: 5
+subsample_t: 1e-5
+batch_size: 2048
+seed: 42
+
+# output
+save_path: ../experiments/word2vec_embeddings.npz
